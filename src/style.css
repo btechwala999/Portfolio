@@ -1,0 +1,125 @@
+*
+{
+
+    font-family: "Electrolize", sans-serif;
+    font-style: normal;
+  
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
+
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: var(--spacing);
+  }
+
+  section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+  }
+  section > h2{
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: "Electrolize", sans-serif;
+    font-style: normal;
+    margin-bottom: 1rem;
+  }
+  .project-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Electrolize", sans-serif;
+    font-style: normal;
+    margin-bottom: 1rem;
+  }
+
+  .project-links > a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Electrolize", sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    color:rgb(49, 128, 207)
+  }
+
+  .project-links > a:hover{
+    color: rgba(182, 20, 227, 0.723);
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote p {
+    color: black;
+    background-color: white;
+    font-size: 4rem;
+    display: inline;
+    line-height: 1;
+  }
+
+  .left {
+    grid-column: 6 / 12;
+  }
+
+  .left > h3 > a{
+    color: rgb(49, 128, 207);
+    text-decoration: none;  
+  }
+
+  .left > h3 > a:hover{
+    color: rgba(182, 20, 227, 0.723);
+  }

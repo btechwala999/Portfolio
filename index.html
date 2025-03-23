@@ -27,14 +27,15 @@
       <p>I like making projects and learning new things!</p>
     </blockquote>
 
+
     <section>
-      <h2>📜 Manifesto</h2>
+      <h2 style="margin-top: 15px;">📜 Manifesto</h2>
       <p>
         I am a full-stack developer passionate about creating secure, efficient, and user-friendly applications that
         solve real-world problems. I believe in:
       </p>
 
-      <ul style="list-style-type: none; padding-left: 0;">
+      <ul style="list-style-type: none; margin-top: 15px; padding-left: 0;">
         <li>→ Building technology that enhances security and privacy in our increasingly digital world.</li>
         <li>→ Creating intuitive user experiences that make technology accessible to everyone.</li>
         <li>→ Continuous learning and adapting to emerging technologies and methodologies.</li>
@@ -43,7 +44,7 @@
       </ul>
 
 
-      <p>
+      <p style="margin-top: 15px;">
         My goal is to leverage my technical skills in web development, cloud computing, and security to develop
         applications that not only meet functional requirements but also prioritize user privacy and data protection. I
         am committed to growing as a developer who balances technical excellence with human-centered design principles.
@@ -58,7 +59,8 @@
         <div class="project-card">
           <h3 class="project-title">SchlüsselSafe</h3>
           <div class="project-links">
-            <a href="https://github.com/btechwala999/Schlussel-Safe--Password-Manager-" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/btechwala999/Schlussel-Safe--Password-Manager-" target="_blank"
+              rel="noopener noreferrer">
               <i class="fab fa-github"></i> GitHub
             </a>
           </div>
@@ -110,7 +112,8 @@
         <div class="project-card">
           <h3 class="project-title">To Do List</h3>
           <div class="project-links">
-            <a href="https://github.com/btechwala999/To_Do_List_Using_React.js" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/btechwala999/To_Do_List_Using_React.js" target="_blank"
+              rel="noopener noreferrer">
               <i class="fab fa-github"></i> GitHub
             </a>
           </div>
@@ -137,12 +140,60 @@
     </blockquote>
 
     <section class="left">
-      <h2>🌐 Contact Me </h2>
+      <style>
+        .contact-form {
+          display: flex;
+          flex-direction: column;
+          max-width: 600px;
+          margin: 20px auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          background-color: #000000;
+        }
 
-      <h3><a href="mailto:utkarshsinghus238@gmail.com">
-          Gmail
-        </a>
-      </h3>
+        .contact-form label {
+          margin-bottom: 10px;
+          font-weight: 900;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+          margin-bottom: 15px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          font-size: 16px;
+        }
+
+        .contact-form button {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 10px;
+          background-color: #5a3f97;
+          color: white;
+          font-size: 20px;
+          font-weight: 900;
+          cursor: pointer;
+        }
+
+        .contact-form button:hover {
+          background-color: #6311d5;
+        }
+      </style>
+      <h2 style="margin-bottom:10px ;">🌐 Contact Me </h2>
+      <form class="contact-form" action="https://formspree.io/f/mwploylp" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
 
       <h3><a href="https://www.linkedin.com/in/utkarsh-singh00">
           LinkedIn
@@ -154,13 +205,13 @@
         </a>
       </h3>
 
-      <h2>
-        📝My Resume
-    </h2>
-    <h3><a href="">
-      Link
-    </a>
-  </h3>
+      <h2 style="margin-bottom:10px; margin-top: 10px;">
+        📝 My Resume
+      </h2>
+      <h3><a href="https://drive.google.com/file/d/1E7x6p801E7jp61-GYjNk4SAK0pG1XO1x/view?usp=drive_link">
+          Link
+        </a>
+      </h3>
 
 
     </section>

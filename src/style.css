@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 *
 {
 
@@ -15,7 +17,7 @@ canvas {
 
 
 :root {
-  --dark-bg: rgba(15, 15, 15, 0.95);
+  --dark-bg: rgba(0, 0, 0, 0.95);
   --spacing: 350px;
 
   font-family: "Electrolize", sans-serif;
@@ -38,10 +40,11 @@ main {
 }
 
 h1, h2, h3, blockquote {
-  font-family: elevon, sans-serif;
-  font-weight: 700;
+  font-family: "Electrolize", sans-serif;
+  font-weight: 800;
   font-style: normal;
 }
+
 
 canvas {
   position: fixed;
@@ -54,32 +57,69 @@ canvas {
   header {
     background: var(--dark-bg);
     grid-column: 2 / span 5;
-    font-size: 2.5rem;
-    padding: 2rem;
+    font-size: 3rem;
+    padding:2rem;
     margin-bottom: var(--spacing);
+    border-radius: 30px;
+    opacity: 0.85;
+    font-weight: 600;
+    
+  }
+
+  header > h1{
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: "Electrolize", sans-serif;
+    font-style: normal;
+    margin-bottom: 1rem;
   }
 
   section {
     grid-column: 2 / 8;
     padding: 1rem;
     background: var(--dark-bg);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     margin-bottom: var(--spacing);
+    border-radius: 30px;
+    opacity: 0.85;
   }
   section > h2{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 800;
     font-family: "Electrolize", sans-serif;
     font-style: normal;
     margin-bottom: 1rem;
   }
   .project-title{
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 1500;
     font-family: "Electrolize", sans-serif;
     font-style: normal;
     margin-bottom: 1rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top:2rem
+  }
+  .project-title:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: ease-out 0.2s;
+    cursor: pointer;
+  }
+  .project-tech{
+    color:rgb(255, 234, 0);
+    font-weight: 700;
+  }
+  .project-tech > span:hover{
+    background-color: rgb(255, 234, 0);
+    border-radius: 8px;
+    transition: ease-out 0.3s;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
   }
 
   .project-links > a{
@@ -89,11 +129,11 @@ canvas {
     font-style: normal;
     text-decoration: none;
     margin-bottom: 1rem;
-    color:rgb(49, 128, 207)
+    color:rgb(0, 179, 255)
   }
 
   .project-links > a:hover{
-    color: rgba(182, 20, 227, 0.723);
+    color: rgb(195, 7, 252)
   }
 
   blockquote {
@@ -116,10 +156,13 @@ canvas {
   }
 
   .left > h3 > a{
-    color: rgb(49, 128, 207);
-    text-decoration: none;  
+    color: rgb(0, 179, 255);
+    text-decoration: none;
+    font-size: 2rem; 
+    margin-bottom: 4px;
+    margin-left: 15px; 
   }
 
   .left > h3 > a:hover{
-    color: rgba(182, 20, 227, 0.723);
+    color: rgb(195, 7, 252);
   }
